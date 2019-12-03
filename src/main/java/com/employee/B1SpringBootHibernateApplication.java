@@ -1,9 +1,10 @@
-package com.employee.B1_SpringBootHibernate;
+package com.employee;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = HibernateJpaAutoConfiguration.class)
 public class B1SpringBootHibernateApplication {
 
 	public static void main(String[] args) {
